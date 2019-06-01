@@ -3,5 +3,6 @@ mydb = mysql.connector.connect(host="localhost",user="root",passwd="1111",databa
 mycursor=mydb.cursor()
 mycursor.execute("select * from customer")
 result = mycursor.fetchone()
+print("hello changes")
 for i in result:
     print(i)
